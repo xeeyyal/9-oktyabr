@@ -1,4 +1,5 @@
-﻿using System.Net.Mail;
+﻿using System.Diagnostics.Tracing;
+using System.Net.Mail;
 
 namespace Task_9oktyabr
 {
@@ -44,57 +45,12 @@ namespace Task_9oktyabr
             //Console.WriteLine($"Reshadin neticesi {ReshadCount}");
             //Console.WriteLine($"Aydanin neticesi {AydanCount}");
 
-            //Task-3
-            //string sentence = "Xeyal Huseynov Group AB104 Back-End Developer";
-            //string[] word = sentence.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            //Task-3 OPTIONAL
+            //Console.WriteLine("Enter sentence: ");
+            //string sentence=Console.ReadLine();
 
-            //Console.WriteLine(string.Join("\n", word));
-
-
-            //Task-4
-            //TrimStart()
-            //string sentence = "****000Xeyal000****";
-            //char[] charsToTrim = { '*', '0' };
-
-            //Console.WriteLine("After: ");
-            //Console.WriteLine(sentence.TrimStart(charsToTrim));
-
-            ////Trim()
-            //string sentence2 = "****000Xeyal000****";
-            //char[] charsToTrim2 = { '*', '0' };
-
-            //Console.WriteLine("After: ");
-            //Console.WriteLine(sentence.Trim(charsToTrim2));
-
-            ////TrimEnd()
-            //string sentence3 = "****000Xeyal000****";
-            //char[] charsToTrim3 = { '*', '0' };
-
-            //Console.WriteLine("After: ");
-            //Console.WriteLine(sentence.TrimEnd(charsToTrim3));
-
-            //Task-5 Optional
-            //Console.Write("Matrisin sətir sayını daxil edin: ");
-            //int setirSayi = Convert.ToInt32(Console.ReadLine());
-
-            //Console.Write("Matrisin sütun sayını daxil edin: ");
-            //int sutunSayi = Convert.ToInt32(Console.ReadLine());
-
-            //int[,] matris1 = new int[setirSayi, sutunSayi];
-            //int[,] matris2 = new int[setirSayi, sutunSayi];
-
-            //Console.WriteLine("Birinci matrisi daxil edin:");
-            //EnterMatris(matris1);
-
-            //Console.WriteLine("İkinci matrisi daxil edin:");
-            //EnterMatris(matris2);
-
-            //int[,] cemMatrisi = SumMatris(matris1, matris2);
-
-            //Console.WriteLine("Cemi");
-            //ShowMatris(cemMatrisi);
+            //Task-4 YAZAMMADIM
         }
-
         //Task-5
         //static void EnterMatris(int[,] matris)
         //{
@@ -142,6 +98,54 @@ namespace Task_9oktyabr
         //    }
         //}
 
+        //Task-3
+        //static void CustomSplit(string sentence)
+        //{
+        //    int count = 1;
+        //    if (sentence.Length==0)
+        //    {
+        //        Console.WriteLine("Heç nə daxil edilməyib");
+        //        return;
+        //    }
+        //    else
+        //    {
+        //        CountWords(sentence, ref count);
+
+        //        string[] words = new string[count];
+
+        //        SplitString(sentence, words);
+        //    }
+        //}
+
+        //static void CountWords(string sentence, ref int count)
+        //{
+        //    for (int i = 0; i < sentence.Length; i++)
+        //    {
+        //        if (sentence[i] == ' ') ;
+        //        count++;
+        //    }
+        //}
+
+        //static void SplitString(string sentence, string[] array)
+        //{
+        //    string word = "";
+
+        //    int index = 0;
+
+        //    for (int i = 0; i < sentence.Length; i++)
+        //    {
+        //        if (sentence[i] == ' ')
+        //        {
+        //            array[index] = word;
+        //            index++;
+        //            word = "";
+        //        }
+        //        else
+        //        {
+        //            word += sentence[i];
+        //        }
+        //    }
+        //}
     }
 
     //Task-1
